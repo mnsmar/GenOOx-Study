@@ -45,6 +45,7 @@ Email em.maragkakis@gmail.com
 package GenOOx::Study;
 
 use XML::Rabbit::Root;
+use GenOOx::Study::Sample;
 
 has_xpath_value 'name'       => '/study/@name';
 has_xpath_value 'species'    => '/study/@species';

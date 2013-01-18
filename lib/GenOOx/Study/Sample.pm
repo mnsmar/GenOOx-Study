@@ -4,7 +4,8 @@ use XML::Rabbit;
 
 has_xpath_value 'name'       => './@name';
 has_xpath_value 'type'       => './@type';
-has_xpath_value 'path'       => './@path';
+has_xpath_value 'data_path'  => './@data_path';
+has_xpath_value 'result_path'=> './@result_path';
 has_xpath_value 'stage'      => './@stage';
 has_xpath_value 'cell_stage' => './@cell_stage';
 has_xpath_value 'condition'  => './@condition';

@@ -50,11 +50,18 @@ sub type : Test(2) {
 	is $self->obj(0)->type, 'RNA-Seq', "... and returns the correct value";
 }
 
-sub path : Test(2) {
+sub data_path : Test(2) {
 	my ($self) = @_;
 	
-	has_attribute_ok($self->obj(0), 'path', "... test object has the 'path' attribute");
-	is $self->obj(0)->path, '/path/to/rnaseq3_WT/', "... and returns the correct value";
+	has_attribute_ok($self->obj(0), 'data_path', "... test object has the 'data_path' attribute");
+	is $self->obj(0)->data_path, '/path/to/rnaseq3_WT/', "... and returns the correct value";
+}
+
+sub result_path : Test(2) {
+	my ($self) = @_;
+	
+	has_attribute_ok($self->obj(0), 'result_path', "... test object has the 'result_path' attribute");
+	is $self->obj(0)->result_path, '/path/to/result_rnaseq3_WT/', "... and returns the correct value";
 }
 
 sub stage : Test(2) {
